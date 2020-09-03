@@ -1,0 +1,94 @@
+/**
+General
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/**
+header
+*/
+header {
+    background-color: rgba(255, 255, 255, 0.94);
+    height: 88px;
+    line-height: 88px;
+    background-color: #06b5a9;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    font-size: 18px;
+    text-align: center;
+    width: 25%;
+    max-width: 120px;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+}
+
+/**
+main
+*/
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px 80px;
+}
+
+.product {
+    flex-basis: 25%;
+}
+
+/**
+main
+*/
+footer img {
+    max-width: 100px;
+}
+
+/*
+Адаптив планшет-мобильное
+*/
+@media screen and (max-width: 960px) {
+    /*Планшет*/
+    .product {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    /*Мобильные*/
+    .product {
+        flex-basis: 100%;
+        horiz-align: center;
+    }
+}
